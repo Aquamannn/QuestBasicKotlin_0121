@@ -37,3 +37,36 @@ fun ConditionalStatement() {
     }
 }
 
+fun Perulangan() {
+    println()
+    println("=== Perulangan ===")
+
+    // For
+    for (i in 1..5) {
+        println("Perulangan ke-$i")
+    }
+
+    val cars = listOf("BMW", "Toyota", "Honda", "Audi")
+    for (car in cars) {
+        println("Car Type: $car")
+    }
+
+    // While
+    var x = 1
+    while (x <= 5) {
+        println("Perulangan ke-$x")
+        x++
+    }
+
+    // Do-While
+    var y = 1
+    do {
+        println("Perulangan ke-$y")
+        y++
+    } while (y <= 5)
+}
+
+fun Main() {
+    ConditionalStatement()
+    Perulangan()
+}
